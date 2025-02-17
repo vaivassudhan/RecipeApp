@@ -8,7 +8,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 
 @Configuration
 public class AppConfig {
-    @Value("${third.party.api.base.url}")
+    @Value("${third.party.recipe.api.base.url}")
     private String baseUrl;
 
     @Bean

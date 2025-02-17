@@ -58,7 +58,7 @@ public class RecipeService {
             .where(f -> f.bool()
                     .should(f.wildcard().fields(SEARCHABLE_FIELDS).matching("*" + searchText + "*"))
                     .minimumShouldMatchNumber(1))
-            .fetchHits(50);
+            .fetchHits(30);
     return new HashSet<>(results).stream().toList();
   }
 

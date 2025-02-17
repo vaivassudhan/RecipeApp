@@ -5,7 +5,13 @@ import { useNavigate } from "react-router-dom";
 const Recipes = ({ recipes = [] }) => {
   const navigate = useNavigate();
 
-  if (!recipes.length) return <p>No recipes found.</p>;
+  if (!recipes.length) {
+    return (
+      <div className="text-center">
+        <p>No recipes found.</p>
+      </div>
+    );
+  }
 
   return (
     <div className="row justify-content-center">

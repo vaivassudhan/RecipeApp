@@ -36,6 +36,9 @@ public class RecipeControllerV1 {
     public ResponseEntity<List<Recipe>> getAllRecipes()
     {
         List<Recipe> recipes = recipeService.getAllRecipes();
+        if (recipes.isEmpty()) {
+            return ResponseEntity.noContent().build();
+        }
         return ResponseEntity.ok(recipes);
     }
 

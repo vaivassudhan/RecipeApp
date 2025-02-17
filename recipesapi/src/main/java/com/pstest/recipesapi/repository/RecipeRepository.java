@@ -7,5 +7,4 @@ import java.util.List;
 
 public interface RecipeRepository extends JpaRepository<Recipe, Long> {
     List<Recipe> findByNameContainingOrCuisineContaining(String name, String cuisine);
-
 }
