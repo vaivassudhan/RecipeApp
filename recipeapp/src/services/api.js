@@ -4,10 +4,9 @@ import { API_BASE_URL } from "../config/env";
 export const fetchRecipes = async () => {
     try {
         const response = await axios.get(`${API_BASE_URL}/recipes`);
-        console.log("testing fetchRecipes response ", response);
         return { status: response.status, data: response.data };
     } catch (error) {
-        throw new Error("Failed to fetch recipes");
+        throw new Error("Failed to fetch recipes due to " +  error.message);
     }
 };
 

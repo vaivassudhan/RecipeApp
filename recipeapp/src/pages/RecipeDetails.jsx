@@ -36,12 +36,9 @@ function RecipeDetails() {
           <div className="row">
             <div className="col-md-6">
               <img
-                src={recipe.image || "https://via.placeholder.com/500"}
+                src={recipe.image}
                 alt={recipe.name}
                 className="img-fluid rounded shadow-lg"
-                onError={(e) => {
-                  e.target.src = "https://via.placeholder.com/500";
-                }}
               />
             </div>
             <div className="col-md-6">

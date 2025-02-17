@@ -6,7 +6,7 @@ const RecipeCard = ({ recipe }) => {
     <div className="col">
       <div className="card h-100 shadow-sm">
         <img
-          src={recipe.image || "https://via.placeholder.com/300"}
+          src={recipe.image}
           alt={recipe.name}
           className="card-img-top"
           style={{ height: "180px", objectFit: "cover" }}

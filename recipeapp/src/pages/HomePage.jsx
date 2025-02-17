@@ -75,7 +75,7 @@ const HomePage = () => {
       setLoading(false);
     }
   };
-  
+
   return (
     <div className="container mx-auto mt-4">
       <ErrorAlert message={error} />
@@ -92,7 +92,6 @@ const HomePage = () => {
           {(filteredRecipes.length != 0 || recipeLoaded) && (<SearchBar onSearch={handleSearch} />)}
           
           {loading && <Loader />}
-          {error && <p>Error: {error}</p>}
           <Recipes recipes={filteredRecipes} setRecipes={setRecipes} />
         </div>
       </div>
