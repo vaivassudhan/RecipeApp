@@ -33,5 +33,5 @@
     "postcss": "^8.5.2",
     "vite": "^6.1.0"
   },
-  "proxy": "http://localhost:8080"
+  "proxy": "https://recipeapp-production-180b.up.railway.app"
 }
