@@ -15,7 +15,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/recipes")
-@CrossOrigin(originPatterns = "http://localhost:*")
+@CrossOrigin(originPatterns = "https://*")
 @Validated
 @Tag(name = "Recipe Controller Version 1", description = "APIs for fetching and managing recipes")
 public class RecipeControllerV1 {
